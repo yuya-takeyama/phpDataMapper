@@ -1,6 +1,4 @@
 <?php
-require_once dirname(__FILE__) . '/init.php';
-
 /**
  * Tests to stress the Query adapter and how it handles conditions
  */
