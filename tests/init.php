@@ -1,11 +1,9 @@
 <?php
-// Require PHPUnit
-require_once 'PHPUnit/Framework.php';
-
 // Require phpDataMapper
 $baseDir = dirname(dirname(__FILE__));
-require $baseDir . '/Base.php';
-require $baseDir . '/Adapter/Mysql.php';
+set_include_path(realpath(dirname(__FILE__) . '/../src') . PATH_SEPARATOR . get_include_path());
+require_once 'phpDataMapper/Base.php';
+require_once 'phpDataMapper/Adapter/Mysql.php';
 
 // Date setup
 date_default_timezone_set('America/Chicago');
